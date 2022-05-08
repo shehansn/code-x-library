@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:context=".BuisnessFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <SearchView
+        android:id="@+id/searchview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search..."
+        android:queryBackground="@android:color/transparent" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview2"
+        tools:visibility="invisible" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/programming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="	Accounting Foundations for Professionals"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscroll1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/programming">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/programing1"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:srcCompat="@drawable/computing1"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/programing2"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/programing1"
+                        app:srcCompat="@drawable/computing__2_"
+
+                        />
+                    <ImageButton
+                        android:id="@+id/programing3"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/programing2"
+                        app:srcCompat="@drawable/computing__3_"
+
+                        />
+                    <ImageButton
+                        android:id="@+id/programing4"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/programing3"
+                        app:srcCompat="@drawable/computing__4_"
+
+                        />
+                    <ImageButton
+                        android:id="@+id/programing5"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/programing4"
+                        app:srcCompat="@drawable/computing__5_"
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/computing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontalscroll1"
+                android:padding="10dp"
+                android:text="Applied Financial Accounting"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscroll2"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_below="@+id/computing"
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/computing1"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        android:onClick="handleSelection"
+                        app:srcCompat="@drawable/computing__6_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/computing2"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/computing1"
+                        app:srcCompat="@drawable/computing__7_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/computing3"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/computing2"
+                        app:srcCompat="@drawable/computing__8_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/computing4"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/computing3"
+                        app:srcCompat="@drawable/computing__9_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/computing5"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/computing4"
+                        app:srcCompat="@drawable/computing__10_"
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/intelegence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Theoretical Foundations of Accounting"
+                android:layout_below="@+id/horizontalscroll2"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscroll3"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_below="@+id/intelegence"
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/intelegence1"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        android:onClick="handleSelection"
+                        app:srcCompat="@drawable/computing__11_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/intelegence2"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/intelegence1"
+                        app:srcCompat="@drawable/computing__12_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/intelegence3"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/intelegence2"
+                        app:srcCompat="@drawable/computing__13_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/intelegence4"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/intelegence3"
+                        app:srcCompat="@drawable/computing__14_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/intelegence5"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/intelegence4"
+                        app:srcCompat="@drawable/computing__15_"
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/cybersecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operations Management"
+                android:layout_below="@+id/horizontalscroll3"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscroll4"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_below="@+id/cybersecurity"
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/cybersecurity1"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        android:onClick="handleSelection"
+                        app:srcCompat="@drawable/computing__10_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/cybersecurity2"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/cybersecurity1"
+                        app:srcCompat="@drawable/computing__9_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/cybersecurity3"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/cybersecurity2"
+                        app:srcCompat="@drawable/computing__8_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/cybersecurity4"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/cybersecurity3"
+                        app:srcCompat="@drawable/computing__7_"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/cybersecurity5"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toEndOf="@id/cybersecurity4"
+                        app:srcCompat="@drawable/computing__6_"
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnbacktohome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horizontalscroll4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/blue_700"
+                android:textStyle="bold"
+                android:text="Back To Home"
+                android:background="@drawable/shape_button01"
+
+
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

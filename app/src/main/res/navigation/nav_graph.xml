@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.codexlibrary.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_computingFragment"
+            app:destination="@id/computingFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_artFragment"
+            app:destination="@id/artFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_buisnessFragment"
+            app:destination="@id/buisnessFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_engineeringFragment"
+            app:destination="@id/engineeringFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_scienceFragment"
+            app:destination="@id/scienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBooksFragment2"
+        android:name="com.example.codexlibrary.MyBooksFragment"
+        android:label="fragment_my_books"
+        tools:layout="@layout/fragment_my_books" />
+    <fragment
+        android:id="@+id/notificationsFragment2"
+        android:name="com.example.codexlibrary.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/EBooksFragment2"
+        android:name="com.example.codexlibrary.EBooksFragment"
+        android:label="fragment_e_books"
+        tools:layout="@layout/fragment_e_books" />
+    <fragment
+        android:id="@+id/accountFragment2"
+        android:name="com.example.codexlibrary.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/computingFragment"
+        android:name="com.example.codexlibrary.ComputingFragment"
+        android:label="fragment_computing"
+        tools:layout="@layout/fragment_computing" >
+        <action
+            android:id="@+id/action_computingFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/artFragment"
+        android:name="com.example.codexlibrary.ArtFragment"
+        android:label="fragment_art"
+        tools:layout="@layout/fragment_art" >
+        <action
+            android:id="@+id/action_artFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/buisnessFragment"
+        android:name="com.example.codexlibrary.BuisnessFragment"
+        android:label="fragment_buisness"
+        tools:layout="@layout/fragment_buisness" >
+        <action
+            android:id="@+id/action_buisnessFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/engineeringFragment"
+        android:name="com.example.codexlibrary.EngineeringFragment"
+        android:label="fragment_engineering"
+        tools:layout="@layout/fragment_engineering" >
+        <action
+            android:id="@+id/action_engineeringFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.example.codexlibrary.ScienceFragment"
+        android:label="fragment_science"
+        tools:layout="@layout/fragment_science" >
+        <action
+            android:id="@+id/action_scienceFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+</navigation>
